@@ -13,6 +13,7 @@ const StyledButton = styled("button", {
   fontWeight: 500,
   fontSize: "16px",
   lineHeight: "36px",
+  transition: "250ms",
 
   variants: {
     type: {
@@ -59,7 +60,7 @@ const StyledButton = styled("button", {
     },
     size: {
       default: {
-        padding: "12px 16px",
+        padding: "6px 16px",
       },
       compact: {
         padding: "2px 16px",

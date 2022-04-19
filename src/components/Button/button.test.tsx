@@ -5,6 +5,10 @@ import Button from "./button.component";
 
 describe("Button", () => {
   test("renders the Button component", () => {
-    render(<Button label="Hello world!" />);
+    render(
+      <Button type="primary" size="default">
+        Hello world
+      </Button>
+    );
   });
 });
