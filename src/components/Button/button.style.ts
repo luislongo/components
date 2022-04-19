@@ -1,71 +1,66 @@
-import styled, { css } from "styled-components";
-import ButtonProps from "./button.props";
+import { styled } from "@stitches/react";
+import { hover } from "@testing-library/user-event/dist/hover";
 
-const defaultButton = (props: ButtonProps) => {
-  if (props.type == "default") {
-    return css`
-      color: aliceblue;
-      background-color: #f89621;
-      border: 2px solid #f89621;
+const StyledButton = styled("button", {
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  borderRadius: "4px",
+  border: "1px solid transparent",
 
-      &:hover {
-        background-color: #f3722c;
-        border: 2px solid #f3722c;
-      }
-      &:active {
-        background-color: #d15d28;
-        border: 2px solid #d15d28;
-      }
-    `;
-  }
-};
+  fontFamily: "DM Sans, sans-serif",
+  fontStyle: "normal",
+  fontWeight: 500,
+  fontSize: "16px",
+  lineHeight: "36px",
 
-const outlinedButton = (props: ButtonProps) => {
-  if (props.type == "outlined") {
-    return css`
-      color: #f89621;
-      border: 2px solid #f89621;
-      background-color: transparent;
+  variants: {
+    type: {
+      primary: {
+        backgroundColor: "#25CE7B",
+        color: "#FFFFFF",
 
-      &:hover {
-        color: aliceblue;
-        background-color: #f3722c;
-        border: 2px solid #f3722c;
-      }
-      &:active {
-        border: 2px solid #d15d28;
-        background-color: #d15d28;
-      }
-    `;
-  }
-};
+        "&:hover": {
+          backgroundColor: "#21B96F",
+        },
+        "&:focus": {
+          backgroundColor: "#25CE7B",
+          outline: "2px solid #167C4A",
+          boxSizing: "content-box",
+        },
+        "&:active": {
+          outline: "0px",
+          backgroundColor: "#21B96F",
+        },
+      },
+      secondary: {
+        backgroundColor: "white",
+        outline: "1px solid rgba(0, 0, 0, 0.2)",
+        color: "#282828",
 
-const disabledButton = (props: ButtonProps) => {
-  if (props.disabled) {
-    return css`
-      color: #ffffff;
-      border: 2px solid #f89621;
-      background-color: transparent;
-    `;
-  }
-};
-
-const backgroundColor = (props: ButtonProps) => {
-  if (props.disabled) {
-    return css`
-      color: coral;
-    `;
-  }
-};
-
-const StyledButton = styled.button<ButtonProps>`
-  font-weight: 600;
-  transition: 500ms;
-  padding: 10px;
-  margin: 10px;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  background-color: ${(props) => backgroundColor(props)};
-`;
+        "&:hover": {
+          backgroundColor: "#F2F2F2",
+        },
+        "&:focus": {
+          backgroundColor: "white",
+          outline: "2px solid #64656A",
+          boxSizing: "content-box",
+        },
+        "&:active": {
+          backgroundColor: "#E6E6E6",
+          outline: "1px solid rgba(0, 0, 0, 0.2)",
+        },
+      },
+    },
+    size: {
+      default: {
+        padding: "12px 16px",
+      },
+      compact: {
+        padding: "2px 16px",
+      },
+    },
+  },
+});
 
 export default StyledButton;

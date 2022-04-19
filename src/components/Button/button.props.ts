@@ -1,7 +1,7 @@
 export default interface ButtonProps {
   className?: string;
-  label: string;
-  type: "outlined" | "default";
+  type: "primary" | "secondary";
+  size: "default" | "compact";
   disabled?: boolean;
-  children?: JSX.Element | JSX.Element[];
+  children?: JSX.Element | JSX.Element[] | string;
 }

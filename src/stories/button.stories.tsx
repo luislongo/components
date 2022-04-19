@@ -10,13 +10,13 @@ export default {
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-export const Normal: ComponentStory<typeof Button> = () => (
-  <Button label="Button" type="default" />
+export const Primary: ComponentStory<typeof Button> = () => (
+  <Button type="primary" size="compact">
+    Primary button
+  </Button>
 );
-export const Outlined: ComponentStory<typeof Button> = () => (
-  <Button label="Button" type="outlined" />
-);
-
-export const Disabled: ComponentStory<typeof Button> = () => (
-  <Button label="Button" type="default" disabled />
+export const Secondary: ComponentStory<typeof Button> = () => (
+  <Button type="secondary" size="default">
+    Secondary button
+  </Button>
 );
