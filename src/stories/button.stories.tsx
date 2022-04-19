@@ -20,3 +20,8 @@ export const Secondary: ComponentStory<typeof Button> = () => (
     Secondary button
   </Button>
 );
+export const Disabled: ComponentStory<typeof Button> = () => (
+  <Button type="disabled" size="default">
+    Disabled button
+  </Button>
+);

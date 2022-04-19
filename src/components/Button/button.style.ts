@@ -51,6 +51,11 @@ const StyledButton = styled("button", {
           outline: "1px solid rgba(0, 0, 0, 0.2)",
         },
       },
+      disabled: {
+        backgroundColor: "#F2F2F2",
+        color: "#818181",
+        outline: "1px solid rgba(0, 0, 0, 0.1)",
+      },
     },
     size: {
       default: {
