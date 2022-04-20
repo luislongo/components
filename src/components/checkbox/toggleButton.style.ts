@@ -1,6 +1,6 @@
 import { styled } from "@stitches/react";
 
-const StyledCheckbox = styled("button", {
+const StyledToggleButton = styled("button", {
   width: "18px",
   height: "18px",
   margin: "3px",
@@ -13,22 +13,24 @@ const StyledCheckbox = styled("button", {
   variants: {
     disabled: {
       true: {
-        fill: "#9A9A9A",
-        transition: "250ms",
+        "svg > *": {
+          fill: "#9A9A9A",
+          transition: "250ms",
+        },
       },
       false: {
-        path: {
+        "svg > *": {
           fill: "#64656A",
           transition: "250ms",
         },
         "&:hover": {
-          path: {
+          "svg > *": {
             fill: "#1EA562",
             transition: "250ms",
           },
         },
         "&:active": {
-          path: {
+          "svg > *": {
             fill: "#25CE7B",
             transition: "250ms",
           },
@@ -38,4 +40,4 @@ const StyledCheckbox = styled("button", {
   },
 });
 
-export default StyledCheckbox;
+export default StyledToggleButton;

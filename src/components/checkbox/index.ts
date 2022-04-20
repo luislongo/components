@@ -1,5 +1,3 @@
-import Checkbox from "./checkbox.component";
-import CheckboxProps from "./checkbox.props";
+import { ToggleButton, ToggleButtonProps } from "./toggleButton.component";
 
-export default Checkbox;
-export { Checkbox, CheckboxProps };
+export { ToggleButton, ToggleButtonProps };
