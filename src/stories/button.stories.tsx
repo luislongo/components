@@ -36,7 +36,7 @@ export const Secondary: ComponentStory<typeof Button> = Template.bind({});
 Secondary.args = {
   type: "secondary",
   size: "default",
-  children: "😋😋😋😋",
+  children: "Secondary button",
 };
 
 export const Disabled: ComponentStory<typeof Button> = Template.bind({});
