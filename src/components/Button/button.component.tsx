@@ -5,7 +5,6 @@ import ButtonProps from "./button.props";
 const Button: FC<ButtonProps> = (props: ButtonProps) => {
   const dispatchClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (props.type != "disabled" && props.onClick) {
-      console.log("Button clicked");
       props.onClick(e);
     }
   };

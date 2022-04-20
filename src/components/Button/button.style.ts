@@ -1,5 +1,4 @@
 import { styled } from "@stitches/react";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 const StyledButton = styled("button", {
   display: "flex",

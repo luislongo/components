@@ -1,7 +1,7 @@
 {
   "homepage": "http://luislongo.github.io/components",
   "name": "@luislongo/components",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "private": false,
   "dependencies": {
     "@stitches/react": "^1.2.7",

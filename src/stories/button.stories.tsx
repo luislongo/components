@@ -22,7 +22,7 @@ export default {
 } as ComponentMeta<typeof Button>;
 
 const Template: Story<ButtonProps> = (args: ButtonProps) => (
-  <Button {...args} />
+  <Button {...args} onClick={(e) => alert("Botão clicado.")} />
 );
 
 export const Primary: ComponentStory<typeof Button> = Template.bind({});
@@ -36,7 +36,7 @@ export const Secondary: ComponentStory<typeof Button> = Template.bind({});
 Secondary.args = {
   type: "secondary",
   size: "default",
-  children: "Secondary button",
+  children: "😋😋😋😋",
 };
 
 export const Disabled: ComponentStory<typeof Button> = Template.bind({});

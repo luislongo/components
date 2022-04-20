@@ -1,0 +1,10 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import Button from "../components/button";
+import ButtonProps from "../components/button/button.props";
+declare const _default: ComponentMeta<React.FC<ButtonProps>>;
+export default _default;
+export declare const Primary: ComponentStory<typeof Button>;
+export declare const Secondary: ComponentStory<typeof Button>;
+export declare const Disabled: ComponentStory<typeof Button>;
+export declare const Compact: ComponentStory<typeof Button>;
