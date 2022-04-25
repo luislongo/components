@@ -9,6 +9,12 @@ import * as pinIcon from "../components/checkbox/assets/pin.icon";
 export default {
   title: "ToggleButton",
   component: ToggleButton,
+  argTypes: {
+    className: { table: { disable: true } },
+    uncheckedSVG: { table: { disable: true } },
+    checkedSVG: { table: { disable: true } },
+    onClick: { table: { disable: true } },
+  },
 } as ComponentMeta<typeof ToggleButton>;
 
 const Template: Story<ToggleButtonProps> = (args: ToggleButtonProps) => (
